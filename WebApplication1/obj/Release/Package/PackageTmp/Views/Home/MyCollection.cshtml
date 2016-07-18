@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "MyCollection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="w3-card w3-margin-top w3-twothird w3-centered">
+    <h2 class="w3-margin-0 w3-green w3-padding">MyCollection</h2>
+</div>
+@{
+
+    List<List<String>> books = (List<List<String>>)Session["books"];
+}
+@foreach (var book in books)
+{
+    <div class="w3-card w3-margin-top w3-twothird w3-row w3-centered">
+        <div class="w3-col w3-third">
+            <div class="w3-green w3-container w3-center w3-padding-large" style="padding-bottom: 24px !important;">
+                <img class="w3-card-4" style="max-height: 200px" src="@book[3]" alt="@book[0] Cover Image" />
+            </div>
+        </div>
+        <div class="w3-col w3-twothird">
+            <ul class="w3-ul w3-large">
+                <li class="w3-green w3-xlarge"><strong>@book[0]</strong></li>
+                <li style="padding-left: 30px; padding-right: 15px;">by <strong>@book[1]</strong></li>
+                <li style="padding-left: 30px; padding-right: 15px;" class="w3-medium">
+                    @if (book[2].Equals("hard"))
+                { <em>Hardcover</em> }
+                else
+                { <em>Paperback</em> }
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+}

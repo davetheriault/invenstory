@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="w3-card w3-margin w3-half">
+    <h2 class="w3-margin-0 w3-green w3-padding">Log In to invenStory</h2>
+    <form class="w3-form" id="loginForm" action="~/home/signin" method="post">
+        <input type="text" name="user" class="w3-input" placeholder="Username" />
+        <input type="password" name="pw" class="w3-input" placeholder="Password" />
+        <input type="submit" class="w3-input" value="Log In" />
+    </form>
+</div>
+

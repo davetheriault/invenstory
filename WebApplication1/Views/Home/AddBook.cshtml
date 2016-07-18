@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "AddBook";
+}
+
+<div class="w3-card w3-margin">
+    <h3 class="w3-green w3-padding w3-margin-0 w3-roboto">
+        Add a Book
+    </h3>
+    <div class="w3-container w3-padding">
+        <form class="w3-form" id="bookadd" action="~/home/insertbook" method="get">
+            <p>
+                <label class="w3-validate">Title</label>
+                <input type="text" class="w3-input" name="title" placeholder="Book Title..." required />
+            </p>
+            <p>
+                <label class="w3-validate">Author</label>
+                <input type="text" class="w3-input" name="author" placeholder="Author Name..." required />
+            </p>
+            <div>
+                <label for="cover" class="w3-validate">Cover Type</label>
+                <div class="w3-input">
+                    <input type="radio" name="cover" value="hard" required />&nbsp; Hardcover &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cover" value="soft" />&nbsp; Paperback
+                </div>
+            </div>
+            <br />
+            <p>
+                <label class="w3-validate">Cover Image URL</label>
+                <input type="url" class="w3-input" name="imageurl" placeholder="Paste Book Cover Image URL here..." required />
+            </p>
+            <p>
+                <input type="submit" class="w3-input" value="Submit" />
+            </p>
+        </form>
+
+    </div>
+</div>
+

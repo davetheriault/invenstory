@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "invenstory2"
+  },
+  "hostingPlanName": {
+    "value": "invenstory"
+  },
+  "siteLocation": {
+    "value": "West US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "adc69482-6c27-490c-994f-f2fa4e5fb347"
+  },
+  "resourceGroup": {
+    "value": "resourcegroup"
+  }
+}

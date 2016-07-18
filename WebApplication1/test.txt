@@ -1,0 +1,72 @@
+Test
+Fart
+hard
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Spider-Man
+Fred
+hard
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Spider-Man
+Dave
+hard
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Pokemon
+Richard Plum
+hard
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+indiana jones
+Dory
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Avengers
+George
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Spider-Man
+Michael Crichton
+hard
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Pokemon
+Michael Crichton
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Jurassic Park
+Michael Crichton
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Spider-Man
+Michael Crichton
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+Ghostbusters
+Dave
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+The Fly
+Harry Grott
+soft
+https://upload.wikimedia.org/wikipedia/en/3/33/Jurassicpark.jpg
+The Cat in The Hat
+Dr. Seuss
+hard
+https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Seuss-cat-hat.gif/220px-Seuss-cat-hat.gif
+Green Eggs & Ham
+Dr. Seuss
+hard
+https://c2.staticflickr.com/6/5524/14130147050_07c4d84987_b.jpg
+The Cat in The Hat
+Dr. Seuss
+hard
+https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Seuss-cat-hat.gif/220px-Seuss-cat-hat.gif
+The Lord of the Flies
+William Golding
+hard
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFGHzXnh9BL-1De3f26J7ZyZq_0scniTPyAAy24Qsvnpqqu0N
+The Da Vinci Code
+Dan Brown
+hard
+https://upload.wikimedia.org/wikipedia/en/6/6b/DaVinciCode.jpg
+Socks For Supper
+Jack Kent
+hard
+http://d.gr-assets.com/books/1414798382l/961027.jpg

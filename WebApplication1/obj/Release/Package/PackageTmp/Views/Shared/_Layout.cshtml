@@ -1,0 +1,50 @@
+﻿@{ 
+    if (Session["logged"] == null || Session["logged"].Equals(""))
+    {
+        if (ViewBag.Title != "Login")
+        {
+            Response.Redirect("~/Home/Login");
+        }
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - invenStory</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+</head>
+<body style="background-color: #1a1a1a;">
+    @if (ViewBag.Title != "invenStory")
+    {
+        @RenderPage("~/Views/Home/Sidenav.cshtml");
+
+    }
+
+    <header class="w3-green w3-main">
+        <nav class="w3-roboto w3-xlarge">
+            <ul class="w3-navbar">
+                <li class="w3-white" style="height: 63px;"><a style="height: 100%;" class="w3-text-green" href="/" style="padding: 8px 13px"><img src="~/images/invenStory300.png" width="274" alt="invenStory home" /></a></li>
+                <li class="vertcenter" id="tag" style="padding: 8px 16px; line-height: 42px;">The Book Inventory Web App</li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="w3-main w3-roboto w3-border-0 w3-padding">
+        @RenderBody()
+
+    </main>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿
+<div class="w3-sidenav w3-roboto w3-collapse w3-green w3-card w3-animate-left w3-large">
+    <a href="#" onclick="w3_close()" class="w3-closenav w3-hide-large w3-right-align">Close &nbsp;<span class="w3-xlarge">X</span>&nbsp;&nbsp;</a>
+    <ul class="w3-ul w3-large">
+        <li class="w3-padding-0"><a class="w3-padding-large" href="/home/mycollection"><i class="fa fa-book"></i>&nbsp; My Books</a></li>
+        <li class="w3-padding-0"><a class="w3-padding-large" href="/home/mycollection"><i class="fa fa-list-ul"></i>&nbsp; My Lists</a></li>
+        <li class="w3-padding-0"><a class="w3-padding-large" href="/home/addbook"><i class="fa fa-plus"></i>&nbsp; Add Books</a></li>
+        <li class="w3-padding-0"><a class="w3-padding-large" href="/home/signout"><i class="fa fa-sign-out"></i>&nbsp; Log Out</a></li>
+    </ul>
+</div>
+
+<div class="w3-text-green w3-opennav w3-hide-large w3-xxlarge w3-padding-left" style="position: absolute; width: 65px; height: 63px; background-color: white;" onclick="w3_open()"><i class="fa fa-bars"></i></div>
+
+<script>
+    function w3_open() {
+        document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    }
+    function w3_close() {
+        document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    }
+    function signOut() {
+        logOut();
+        document.location.href = "/LogOut";
+    }
+
+    // This is called with the results from from FB.getLoginStatus().
+    function statusChangeCallback(response) {
+        console.log('statusChangeCallback');
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+            // Logged into your app and Facebook.
+            testAPI();
+        } else if (response.status === 'not_authorized') {
+            // The person is logged into Facebook, but not your app.
+            document.getElementById('status').innerHTML = 'Please log ' +
+                    'into this app.';
+        } else {
+            // The person is not logged into Facebook, so we're not sure if
+            // they are logged into this app or not.
+            document.getElementById('status').innerHTML = 'Please log ' +
+                    'into Facebook.';
+        }
+    }
+
+    // This function is called when someone finishes with the Login
+    // Button.  See the onlogin handler attached to it in the sample
+    // code below.
+    function checkLoginState() {
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+    }
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1531801267115904',
+            cookie: true, // enable cookies to allow the server to access
+            // the session
+            xfbml: true, // parse social plugins on this page
+            version: 'v2.5' // use graph api version 2.5
+        });
+
+        // Now that we've initialized the JavaScript SDK, we call
+        // FB.getLoginStatus().  This function gets the state of the
+        // person visiting this page and can return one of three states to
+        // the callback you provide.  They can be:
+        //
+        // 1. Logged into your app ('connected')
+        // 2. Logged into Facebook, but not your app ('not_authorized')
+        // 3. Not logged into Facebook and can't tell if they are logged into
+        //    your app or not.
+        //
+        // These three cases are handled in the callback function.
+
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+
+    };
+
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    // Here we run a very simple test of the Graph API after login is
+    // successful.  See statusChangeCallback() for when this call is made.
+    function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function (response) {
+            console.log('Successful login for: ' + response.name);
+            document.getElementById('status').innerHTML =
+                    'Thanks for logging in, ' + response.name + '!';
+        });
+    }
+
+    function logOut() {
+        FB.logout(function (response) {
+            // Person is now logged out
+            statusChangeCallback(response);
+        });
+    }
+
+    $(window).click(function () {
+        if($(".w3-sidenav").css("display") === "block") {
+            $(".w3-sidenav").css("display", "none");
+        }
+    });
+
+    $(".w3-sidenav").click(function (event) {
+        event.stopPropagation();
+    });
+
+    $(".w3-opennav").click(function (event) {
+        event.stopPropagation();
+    });
+
+    $(document).ready(function () {
+        $
+    });
+</script>
